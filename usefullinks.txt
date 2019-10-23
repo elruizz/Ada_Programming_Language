@@ -1,5 +1,7 @@
 Ebook for Ada:
-https://en.wikibooks.org/wiki/Ada_Style_Guide
+1) https://en.wikibooks.org/wiki/Ada_Style_Guide
+
+2) http://www.pegasoft.ca/resources/boblap/book.html
 
 If you use ATOM.io for editing code. You can import the ada language.
 Use this command inside the .atom/preferences folder:
