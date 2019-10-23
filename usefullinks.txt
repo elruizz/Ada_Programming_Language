@@ -1,2 +1,4 @@
 Ebook for Ada:
 https://en.wikibooks.org/wiki/Ada_Style_Guide
+
+Examples: 
