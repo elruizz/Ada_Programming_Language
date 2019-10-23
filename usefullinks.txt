@@ -1,4 +1,11 @@
 Ebook for Ada:
 https://en.wikibooks.org/wiki/Ada_Style_Guide
 
-Examples: 
+If you use ATOM.io for editing code. You can import the ada language.
+Use this command inside the .atom/preferences folder:
+
+apm init --package language-ada --convert https://github.com/textmate/ada.tmbundle.git
+
+
+
+Examples:
