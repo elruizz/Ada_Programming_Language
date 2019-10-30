@@ -10,4 +10,12 @@ apm init --package language-ada --convert https://github.com/textmate/ada.tmbund
 
 
 
-Examples:
+Useful topics:
+To Create and Run an Ada Program:
+1. Install the Ada compiler
+2. Create a project (directory)
+3. Create and edit file(s) containing Ada source code
+4. Compile the source code, creating object code
+5. Link the object code, creating a program
+6. Run the resulting program
+7. (Optionally) Debug the resulting program
