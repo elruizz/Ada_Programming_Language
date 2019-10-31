@@ -19,3 +19,41 @@ To Create and Run an Ada Program:
 5. Link the object code, creating a program
 6. Run the resulting program
 7. (Optionally) Debug the resulting program
+
+
+REALLY USEFUL:
+https://gcc.gnu.org/onlinedocs/gnat_ugn/Running-a-Program-with-Multiple-Units.html#Running-a-Program-with-Multiple-Units
+
+Things I've learned:
+1. packages can contain multiple procedures
+2. need to compile each individual .adb file. These are the bodies
+3. Do not need to compile the .ads
+3b. If we wanna check the semantics of our .ads file. use extension -gnatc
+        ex: gcc -c greetings.ads -gnatc
+
+One way to compile:
+gcc -c gmain.adb
+gcc - greetings.adb
+gnatbind gmain
+gnatlink gmain
+
+ORRRR
+gnatmake gmain.adb  (much fREAKIN easier)
+
+
+if you edit gmain.adb, you only need to recompile that file. But if you edit greetings.ads,
+you must recompile both greetings.adb and gmain.adb, because both files contain units that depend on greetings.ads.
+
+gnatbind will warn you if you forget one of these compilation steps,
+so that it is impossible to generate an inconsistent program as a result of forgetting to do a compilation.
+
+An Ada `compilation' (which is a sequence of compilation units) is represented using a sequence of files.
+Similarly, you will place each subunit or child unit in a separate file.
+
+
+* If a package spec has no body, compile the package spec to produce the object file for the package.
+* If a package has both a spec and a body, compile the body to produce the object file for the package.
+The source file for the package spec need not be compiled in this case because there is only one object file,
+    which contains the code for both the spec and body of the package.
+* For a subprogram, compile the subprogram body to produce the object file for the subprogram.
+    The spec, if one is present, is as usual in a separate file, and need not be compiled.
