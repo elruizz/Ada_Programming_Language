@@ -8,6 +8,11 @@ Use this command inside the .atom/preferences folder:
 
 apm init --package language-ada --convert https://github.com/textmate/ada.tmbundle.git
 
+List of all the libraries in Ada:
+https://en.wikibooks.org/wiki/Ada_Programming/Libraries/Ada
+
+REALLY USEFUL:
+https://gcc.gnu.org/onlinedocs/gnat_ugn/Running-a-Program-with-Multiple-Units.html#Running-a-Program-with-Multiple-Units
 
 
 Useful topics:
@@ -20,9 +25,6 @@ To Create and Run an Ada Program:
 6. Run the resulting program
 7. (Optionally) Debug the resulting program
 
-
-REALLY USEFUL:
-https://gcc.gnu.org/onlinedocs/gnat_ugn/Running-a-Program-with-Multiple-Units.html#Running-a-Program-with-Multiple-Units
 
 Things I've learned:
 1. packages can contain multiple procedures
@@ -57,3 +59,9 @@ The source file for the package spec need not be compiled in this case because t
     which contains the code for both the spec and body of the package.
 * For a subprogram, compile the subprogram body to produce the object file for the subprogram.
     The spec, if one is present, is as usual in a separate file, and need not be compiled.
+
+* In the case of subunits, only compile the parent unit.
+ A single object file is generated for the entire subunit tree, which includes all the subunits.
+* Compile child units independently of their parent units (though, of course, the spec of all the ancestor unit must be present in order to compile a child unit).
+* Compile generic units in the same manner as any other units. The object files in this case are small dummy files that contain
+  at most the flag used for elaboration checking. This is because GNAT always handles generic instantiation by means of macro expansion. However, it is still necessary to compile generic units, for dependency checking and elaboration purposes.
