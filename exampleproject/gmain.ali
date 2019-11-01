@@ -1,4 +1,4 @@
-V "GNAT Lib v7"
+V "GNAT Lib v8"
 M P W=b
 P ZX
 
@@ -7,9 +7,9 @@ RN
 U gmain%b		gmain.adb		66eeffd7 NE OO SU
 W greetings%s		greetings.adb		greetings.ali
 
-D gmain.adb		20191031003045 23f0165a gmain%b
-D greetings.ads		20191030233948 451ee98d greetings%s
-D system.ads		20170510173650 4635ec04 system%s
+D gmain.adb		20191101151531 23f0165a gmain%b
+D greetings.ads		20191101151531 451ee98d greetings%s
+D system.ads		20180111085525 4635ec04 system%s
 X 1 gmain.adb
 2U11*Gmain 2b11 6l5 6t10
 X 2 greetings.ads
