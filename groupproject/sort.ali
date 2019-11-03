@@ -1,0 +1,89 @@
+V "GNAT Lib v7"
+M P W=b
+P ZX
+
+RN
+RV NO_IO
+RV NO_DEFAULT_INITIALIZATION
+RV NO_IMPLICIT_LOOPS
+RV SPARK_05
+
+U sort%b		sort.adb		5d32dccc NE OO SU
+W ada%s			ada.ads			ada.ali
+W ada.integer_text_io%s	a-inteio.ads		a-inteio.ali
+W ada.text_io%s		a-textio.adb		a-textio.ali
+W interfaces%s		interfac.ads		interfac.ali
+W system%s		system.ads		system.ali
+W system.compare_array_unsigned_8%s  s-carun8.adb  s-carun8.ali
+
+D ada.ads		20170106103348 76789da1 ada%s
+D a-except.ads		20151016123252 291912d5 ada.exceptions%s
+D a-inteio.ads		20070406091342 f64b89a4 ada.integer_text_io%s
+D a-ioexce.ads		20140225151544 e4a01f64 ada.io_exceptions%s
+D a-stream.ads		20141120112812 119b8fb3 ada.streams%s
+D a-tags.ads		20151016130316 01f5e3ef ada.tags%s
+D a-textio.ads		20140717063745 386df5d4 ada.text_io%s
+D a-tiinio.ads		20140717063513 aa04e5d6 ada.text_io.integer_io%s
+D a-unccon.ads		20170106103348 31484697 ada.unchecked_conversion%s
+D interfac.ads		20160502101001 5ab55268 interfaces%s
+D i-cstrea.ads		20140801100435 e53d8b8e interfaces.c_streams%s
+D sort.adb		20191103010026 9314a0bc sort%b
+D system.ads		20170510173650 4635ec04 system%s
+D s-carun8.ads		20140225151544 a903718d system.compare_array_unsigned_8%s
+D s-crtl.ads		20141120112812 0ebbdb71 system.crtl%s
+D s-exctab.ads		20140225151139 54135002 system.exception_table%s
+D s-ficobl.ads		20140718105747 078245e4 system.file_control_block%s
+D s-parame.ads		20140801093848 7e2a0d7f system.parameters%s
+D s-soflin.ads		20151020124036 14e1eb6c system.soft_links%s
+D s-stache.ads		20140225151139 a37c21ec system.stack_checking%s
+D s-stalib.ads		20151112104907 09bd3940 system.standard_library%s
+D s-stoele.ads		20140225151139 2dc34a04 system.storage_elements%s
+D s-traent.ads		20140730135025 005bf670 system.traceback_entries%s
+D s-unstyp.ads		20160502101423 34867c83 system.unsigned_types%s
+D s-wchcon.ads		20140718092328 1b7d22d2 system.wch_con%s
+X 1 ada.ads
+16K9*Ada 20e8 12|1r6 2r6 3r5 4r5 46r7
+X 3 a-inteio.ads
+18K13*Integer_Text_IO[8|46] 12|2w10 4r9
+X 7 a-textio.ads
+49K13*Text_IO 471e16 12|1w10 3r9 46r11
+166U14*New_Line 12|56s7 158s4 160s4 176s13
+169U14*Skip_Line 12|48s7 55s7
+242U14*Put 12|46s19 50s7 53s7 157s4 159s4 172s13
+249U14*Get_Line 12|51s7
+263U14*Put_Line 12|113s4 114s4
+264a7 Item{string} 12|113r13
+X 8 a-tiinio.ads
+56U14*Get 12|47s7[3|18] 54s7[3|18]
+66U14*Put 12|173s13[3|18] 174s13[3|18]
+X 12 sort.adb
+6U11*Sort 6b11 180l5 180t9
+8A12 Nametype{string}<integer> 16r22
+9I12 Idtype{natural} 17r22
+10I12 Extensiontype{natural} 18r22
+14R9 Studentrecord 19e17 23r53 30r21 38r40 62r33 64r14
+16a10 Name{8A12} 44m12 51m21 90r44 91r19 172r36
+17i10 Id{9I12} 47m16 124r32 133r27 133r47 173r36
+18i10 Extension{10I12} 54m16 174r36
+22I12 Studentindex{integer} 23r36
+23A9 Studentarraytype(14R9)<integer> 27r14 76r51
+27a4 Sort{23A9} 133r19 143m14 148m13 164m34 164r34 172r17 173r17 174r17
+28i4 Currentindex{natural} 131r25 142m14 142r30 143r19 164r53 167r13
+30r4 Currentstudent{14R9} 120m18 120r18 124r17 133r32 143r36 148r31
+31i4 Countrecords{integer} 167r29 170m13 170r29 172r22 173r22 174r22
+33i4 Length{integer} 51m26
+38U14 Getstudent 38b14 38=26 57l8 57t18 120s7
+38r26 Item{14R9} 44m7 47m11 47r11 51m16 51r16 54m11 54r11
+62U14 Swap 62b14 62=20 62=22 71l8 71t12 100s13
+62r20 X{14R9} 68r15 69m7
+62r22 Y{14R9} 69r12 70m7
+64r7 Temp{14R9} 68m7 70r12
+76U14 Selectionsort 76b14 76=29 77>29 105l8 105t21 164s4
+76a29 Studentarray{23A9} 90r16 90r51 100m18 100r18 100m47 100r47 164r18
+77i29 Arraysize{integer} 84r34 88r51 164r40
+79i7 Indexofmin{integer} 86m10 90r64 93m16 98r13 100r60
+84i11 Positiontofill{integer} 86r24 88r31 98r27 100r31
+88i14 Itemtocompare{integer} 90r29 93r30
+109i1 CurrentI{integer} 130m13 135m22 141r13 148r18
+131i17 I{integer} 133r24 135r34
+

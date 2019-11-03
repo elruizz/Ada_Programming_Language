@@ -27,6 +27,11 @@ REALLY USEFUL:
 https://gcc.gnu.org/onlinedocs/gnat_ugn/Running-a-Program-with-Multiple-Units.html#Running-a-Program-with-Multiple-Units
 http://www.adapower.com/index.php?Command=Class&ClassID=Basics&CID=206
 
+Syntax Rules:
+:= assignment operator
+= boolean compare operator (== in c++)
+
+
 Things I've learned:
 1. packages can contain multiple procedures
 2. need to compile each individual .adb file. These are the bodies
