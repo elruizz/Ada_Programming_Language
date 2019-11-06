@@ -26,6 +26,8 @@ To Create and Run an Ada Program:
 REALLY USEFUL:
 https://gcc.gnu.org/onlinedocs/gnat_ugn/Running-a-Program-with-Multiple-Units.html#Running-a-Program-with-Multiple-Units
 http://www.adapower.com/index.php?Command=Class&ClassID=Basics&CID=206
+https://learn.adacore.com/courses/intro-to-ada/chapters/introduction.html
+
 
 Syntax Rules:
 := assignment operator
