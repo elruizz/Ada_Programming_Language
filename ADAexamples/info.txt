@@ -1,0 +1,4 @@
+this folder has programs from https://learn.adacore.com. I am just using these
+programs to show how ADA language works.
+
+These are not my programs, they are adacore's property.
