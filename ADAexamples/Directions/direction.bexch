@@ -1,0 +1,21 @@
+[GENERATED OBJECT FILE]
+b__direction.o
+[PROJECT FILES]
+/usr/share/gpr/_default.gpr
+20170517124026
+[BOUND OBJECT FILES]
+/home/matacker/Desktop/School/CSCI310/ADAporject/Ada_Programming_Language/ADAexamples/Directions/direction.o
+[GENERATED SOURCE FILES]
+b__direction.ads
+b__direction.adb
+b__direction.ali
+[RESULTING OPTIONS]
+-L/home/matacker/Desktop/School/CSCI310/ADAporject/Ada_Programming_Language/ADAexamples/Directions/
+-L/home/matacker/Desktop/School/CSCI310/ADAporject/Ada_Programming_Language/ADAexamples/Directions/
+-L/usr/lib/gcc/x86_64-linux-gnu/7/adalib/
+-shared
+-shared-libgcc
+-lgnat-7
+[RUN PATH OPTION]
+/usr/lib/gcc/x86_64-linux-gnu/7/adalib/
+/usr/lib
