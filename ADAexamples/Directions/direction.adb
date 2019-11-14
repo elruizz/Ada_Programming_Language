@@ -1,7 +1,7 @@
 with Ada.Text_IO; use Ada.Text_IO;
 with Ada.Integer_Text_IO; use Ada.Integer_Text_IO;
 
-procedure Check_Direction is
+procedure Direction is
    N : Integer;
 begin
    Put ("Enter the coordinate value: ");  -- Puts a String
@@ -26,4 +26,4 @@ begin
    else
       Put_Line (" is not in the range 0..360");
    end if;
-end Check_Direction;
+end Direction;

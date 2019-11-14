@@ -1,0 +1,56 @@
+V "GNAT Lib v7"
+M P W=b
+P SS ZX
+
+RN
+RV NO_IO
+RV NO_SECONDARY_STACK
+RV NO_DEFAULT_INITIALIZATION
+RV SPARK_05
+
+U readfile%b		readfile.adb		30a2ae50 NE OO SU
+W ada%s			ada.ads			ada.ali
+W ada.text_io%s		a-textio.adb		a-textio.ali
+W system.secondary_stack%s  s-secsta.adb	s-secsta.ali
+
+D ada.ads		20170106103348 76789da1 ada%s
+D a-except.ads		20151016123252 291912d5 ada.exceptions%s
+D a-ioexce.ads		20140225151544 e4a01f64 ada.io_exceptions%s
+D a-stream.ads		20141120112812 119b8fb3 ada.streams%s
+D a-tags.ads		20151016130316 01f5e3ef ada.tags%s
+D a-textio.ads		20140717063745 386df5d4 ada.text_io%s
+D a-unccon.ads		20170106103348 31484697 ada.unchecked_conversion%s
+D interfac.ads		20160502101001 5ab55268 interfaces%s
+D i-cstrea.ads		20140801100435 e53d8b8e interfaces.c_streams%s
+D readfile.adb		20191114012731 08cf5b84 readfile%b
+D system.ads		20170510173650 4635ec04 system%s
+D s-crtl.ads		20141120112812 0ebbdb71 system.crtl%s
+D s-exctab.ads		20140225151139 54135002 system.exception_table%s
+D s-ficobl.ads		20140718105747 078245e4 system.file_control_block%s
+D s-parame.ads		20140801093848 7e2a0d7f system.parameters%s
+D s-secsta.ads		20170112134946 9751b57e system.secondary_stack%s
+D s-soflin.ads		20151020124036 14e1eb6c system.soft_links%s
+D s-stache.ads		20140225151139 a37c21ec system.stack_checking%s
+D s-stalib.ads		20151112104907 09bd3940 system.standard_library%s
+D s-stoele.ads		20140225151139 2dc34a04 system.storage_elements%s
+D s-traent.ads		20140730135025 005bf670 system.traceback_entries%s
+D s-unstyp.ads		20160502101423 34867c83 system.unsigned_types%s
+D s-wchcon.ads		20140718092328 1b7d22d2 system.wch_con%s
+X 1 ada.ads
+16K9*Ada 20e8 10|1r6 1r24
+X 6 a-textio.ads
+49K13*Text_IO 471e16 10|1w10 1r28
+52P9*File_Type 10|4r11
+53n23*In_File{53E9} 10|7r18
+92U14*Open 10|6s4
+93p7 File{52P9} 10|6r10
+94e7 Mode{53E9} 10|7r10
+95a7 Name{string} 10|8r10
+98U14*Close 10|13s4
+183V13*End_Of_File{boolean} 10|9s15
+253V13*Get_Line{string} 10|10s17
+263U14*Put_Line 10|10s7
+X 10 readfile.adb
+3U11*Readfile 3b11 14l5 14t13
+4p4 File{6|52P9} 6m18 6r18 9r28 10r27 13m11 13r11
+
