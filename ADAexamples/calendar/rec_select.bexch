@@ -1,0 +1,21 @@
+[GENERATED OBJECT FILE]
+b__rec_select.o
+[PROJECT FILES]
+/usr/share/gpr/_default.gpr
+20170517124026
+[BOUND OBJECT FILES]
+/home/matacker/Desktop/School/CSCI310/ADAporject/Ada_Programming_Language/ADAexamples/calendar/rec_select.o
+[GENERATED SOURCE FILES]
+b__rec_select.ads
+b__rec_select.adb
+b__rec_select.ali
+[RESULTING OPTIONS]
+-L/home/matacker/Desktop/School/CSCI310/ADAporject/Ada_Programming_Language/ADAexamples/calendar/
+-L/home/matacker/Desktop/School/CSCI310/ADAporject/Ada_Programming_Language/ADAexamples/calendar/
+-L/usr/lib/gcc/x86_64-linux-gnu/7/adalib/
+-shared
+-shared-libgcc
+-lgnat-7
+[RUN PATH OPTION]
+/usr/lib/gcc/x86_64-linux-gnu/7/adalib/
+/usr/lib
