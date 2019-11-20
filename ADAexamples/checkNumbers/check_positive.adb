@@ -9,5 +9,7 @@ begin
    if N > 0 then
       Put (N);  --  Put an Integer
       Put_Line (" is a positive number");
+   else
+    Put_line ("Not a positive number, exiting the program");
    end if;
 end Check_Positive;

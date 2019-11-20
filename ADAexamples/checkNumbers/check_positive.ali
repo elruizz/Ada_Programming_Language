@@ -10,7 +10,7 @@ RV NO_IO
 RV NO_IMPLEMENTATION_PRAGMAS
 RV SPARK_05
 
-U check_positive%b	check_positive.adb	049d5fa0 NE OO SU
+U check_positive%b	check_positive.adb	499fda5f NE OO SU
 W ada%s			ada.ads			ada.ali
 W ada.integer_text_io%s	a-inteio.ads		a-inteio.ali
 W ada.text_io%s		a-textio.adb		a-textio.ali
@@ -24,7 +24,7 @@ D a-tags.ads		20151016130316 01f5e3ef ada.tags%s
 D a-textio.ads		20140717063745 386df5d4 ada.text_io%s
 D a-tiinio.ads		20140717063513 aa04e5d6 ada.text_io.integer_io%s
 D a-unccon.ads		20170106103348 31484697 ada.unchecked_conversion%s
-D check_positive.adb	20191106170518 cabb23d0 check_positive%b
+D check_positive.adb	20191120183046 87b9a62f check_positive%b
 D interfac.ads		20160502101001 5ab55268 interfaces%s
 D i-cstrea.ads		20140801100435 e53d8b8e interfaces.c_streams%s
 D system.ads		20170510173650 4635ec04 system%s
@@ -46,11 +46,11 @@ X 3 a-inteio.ads
 X 7 a-textio.ads
 49K13*Text_IO 471e16 10|1w10 1r27
 242U14*Put 10|7s4
-263U14*Put_Line 10|11s7
+263U14*Put_Line 10|11s7 13s5
 X 8 a-tiinio.ads
 56U14*Get 10|8s4[3|18]
 66U14*Put 10|10s7[3|18]
 X 10 check_positive.adb
-4U11*Check_Positive 4b11 13l5 13t19
+4U11*Check_Positive 4b11 15l5 15t19
 5i4 N{integer} 8m9 9r7 10r12
 
