@@ -41,32 +41,34 @@ procedure Sort is
    end Getstudent;
 
 -------------------------------------------------------------
+--Swapem
    procedure Swap (X,Y : in out StudentRecord) is
       Temp : StudentRecord;
-   begin -- Swap
+   begin
       Temp := X;
       X := Y;
       Y := Temp;
    end Swap;
 --------------------------------------------------------------------------
-   procedure Selectionsort (Studentarray : in out Studentarraytype; Arraysize : in Integer) is
+--SelectSort
+   procedure SelectSort (Studentarray : in out Studentarraytype; Arraysize : in Integer) is
 
-      Indexofmin : Integer;
+      Min : Integer;
    begin
-      for Positiontofill in 1 .. Arraysize-1 loop
-         Indexofmin := Positiontofill;
-         for Itemtocompare in Positiontofill+1 .. Arraysize loop
-            if Studentarray(Itemtocompare).Name < Studentarray(Indexofmin).
+      for PositionToFill in 1 .. Arraysize-1 loop
+         Min := PositionToFill;
+         for PositionToCompare in PositionToFill+1 .. Arraysize loop
+            if Studentarray(PositionToCompare).Name < Studentarray(Min).
                   Name then
-               Indexofmin := Itemtocompare;
+               Min := PositionToCompare;
             end if;
          end loop;
 
-         if Indexofmin /= Positiontofill then
-            Swap(Studentarray(Positiontofill),Studentarray(Indexofmin));
+         if Min /= PositionToFill then
+            Swap(Studentarray(PositionToFill),Studentarray(Min));
          end if;
       end loop;
-   end Selectionsort;
+   end SelectSort;
 ---------------------------------------------------------------------------
 -- Main Program
 CurrentI : Integer := 0;
@@ -95,7 +97,7 @@ begin
    Put("_________________________________________________________");
    New_Line;
 
-   Selectionsort(Studentarray => Sort, Arraysize => Currentindex);
+   Selectsort(Studentarray => Sort, Arraysize => Currentindex);
       while CurrentIndex /= CountRecords
       loop
             Countrecords := Countrecords + 1;
